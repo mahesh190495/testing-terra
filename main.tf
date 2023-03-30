@@ -8,10 +8,10 @@ terraform {
 }
 
 # Configure the AWS Provider
+output name {
+  value       = var.key
+  sensitive   = no
+  description = "description"
 
-
-
-module proposal {
-  source = "git::https://github.com/mahesh95prabhu/helloterra.git"
-  
 }
+
