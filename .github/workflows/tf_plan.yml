@@ -10,15 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          repository: mahesh95prabhu/helloterra
-          token: ${{ secrets.GIT_TOKEN }}
-            
+        uses: actions/checkout@v2     
         
-
-
-
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
