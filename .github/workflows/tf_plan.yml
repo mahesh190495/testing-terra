@@ -19,10 +19,10 @@ jobs:
         id: init
         run: terraform init
       
-      - name: Terraform Validate
+      - name: Terraform Validate 
         id: validate
         run: terraform validate -no-color
 
-      - name: Terraform Plan
-        id: plan
+      - name: Terraform Plan 
+        id: plan -var "key=${{ secrets.GIT_TOKEN }}"
         run: terraform plan -no-color
