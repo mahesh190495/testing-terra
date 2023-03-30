@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: mahesh95prabhu/proposal1
+          repository: mahesh95prabhu/helloterra
           token: ${{ secrets.GIT_TOKEN }}
             
         
