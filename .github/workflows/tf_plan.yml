@@ -2,7 +2,7 @@ name: "Terraform Plan"
 
 on: [workflow_dispatch]
 env:
-  key: ${{ secrets.KEY }}
+  TF_VAR_key: ${{ secrets.KEY }}
 
 
 jobs:
