@@ -1,7 +1,8 @@
 name: "Terraform Plan"
 
 on: [workflow_dispatch]
-
+env:
+  key: ${{ secrets.KEY }}
 
 
 jobs:
@@ -24,5 +25,5 @@ jobs:
         run: terraform validate -no-color
 
       - name: Terraform Plan 
-        id: plan -var=key=${{ secrets.KEY }}
+        id: plan 
         run: terraform plan -no-color
